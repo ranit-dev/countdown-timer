@@ -209,8 +209,9 @@
   const themeIcon = document.getElementById('themeIcon');
   
   // Initialize theme
-  let isDark = true;
-  root.classList.add('dark');
+  let isDark = false;
+  root.classList.add('light');
+  themeIcon.textContent = '●';
   
   // Theme toggle
   themeToggle.addEventListener('click', () => {
